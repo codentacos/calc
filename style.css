@@ -40,7 +40,7 @@ button:hover {
   background-color: rgb(168, 3, 64);
   border: 1px solid white;
   opacity: .6;
-  transition: .4s;
+  transition: .2s;
 }
 
 #input {
