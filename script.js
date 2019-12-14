@@ -35,6 +35,14 @@ function updateDisplay(v) {
 
 function calculate() {
   equalOp.addEventListener("click", function() {
+      //Check if dividing by zero
+    if (currentOperator === "/") {
+      if (currentNum === 0) {
+        alert("Don't divide by zero");
+        return;
+      }
+    }
+
     if (result === 0) {
       result = eval(lastNum + currentOperator + currentNum);
     } else {
